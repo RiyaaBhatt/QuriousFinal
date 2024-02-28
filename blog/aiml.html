@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demystifying AIML: A Beginner's Guide</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="container py-4 text-center">
+        <h1 class="display-4">Demystifying AIML: A Beginner's Guide for Students</h1>
+        <!-- <img src="img/aiml.jpg" alt="AIML Image" class="img-fluid mx-auto d-block mt-4"> -->
+    </header>
+
+    <main class="container py-4">
+        <section class="mb-4">
+            <h2>What is AIML?</h2>
+            <p>AIML (Artificial Intelligence Markup Language) is a specialized language designed for programming chatbots. It uses tags and attributes to define patterns and responses, allowing chatbots to understand user input and generate appropriate replies.</p>
+        </section>
+
+        <section class="mb-4">
+            <h2>How Does AIML Work?</h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <h3 class="h5">Pattern Matching</h3>
+                    <p>The chatbot searches for matching patterns in its database based on user input.</p>
+                </li>
+                <li class="list-group-item">
+                    <h3 class="h5">Template Selection</h3>
+                    <p>A corresponding template associated with the matched pattern is selected.</p>
+                </li>
+                <li class="list-group-item">
+                    <h3 class="h5">Response Generation</h3>
+                    <p>The chatbot processes the template, potentially involving variables, substitutions, and logic, to generate a final response for the user.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="mb-4">
+            <h2>Example</h2>
+            <pre class="bg-light p-3">
+                &lt;category&gt;
+                  &lt;pattern&gt;* hello&lt;/pattern&gt;
+                  &lt;template&gt;Hi there! How can I help you today?&lt;/template&gt;
+                &lt;/category&gt;
+            </pre>
+        </section>
+
+        <section class="mb-4">
+            <h2>Benefits of AIML</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Ease of use: Relatively simple to learn and implement, making it accessible for students.</li>
+                <li class="list-group-item">Flexibility: Allows for complex conversation flows and customization.</li>
+                <li class="list-group-item">Widely used: Popular choice for developing chatbots across various platforms.</li>
+            </ul>
+        </section>
+
+        <section class="mb-4">
+            <h2>Exploring AIML Further</h2>
+            <ul class="list-group">
+                <li class="list-group-item"><a href="http://www.aiml.foundation/">AIML website</a></li>
+                <li class="list-group-item">Online tutorials and courses</li>
+                <li class="list-group-item">Open-source AIML libraries: PyAIML (Python), ChatterBot (Python)</li>
+            </ul>
+        </section>
+
+        <section class="text-center">
+            <p>AIML provides a foundation for building intelligent and engaging chatbots. Start learning and explore its potential!</p>
+        </section>
+    </main>
+
+    <footer class="container py-4 text-center">
+        <p>&copy; <?php echo date("Y"); ?> All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

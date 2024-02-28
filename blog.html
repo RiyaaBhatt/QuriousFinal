@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>KidKinder - Kindergarten Website Template</title>
+  
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -29,25 +29,25 @@
     <link href="css/style.css" rel="stylesheet">
     <style>
     
-        .container {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          align-items: center;
-          margin: 20px;
+       .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 25px;
+            transform: translate(100px);
         }
-    
+
         .card {
-          width: 300px;
-          height: 350px;
-          margin: 10px;
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          border-radius: 10px;
-          background-color: white;
-          position: relative;
-    
+            width: 270px;
+            height: 350px;
+            margin: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            background-color: white;
+            position: relative;
+
         }
-    
         .icon {
           width: 100%;
           height: 50%;
@@ -114,81 +114,76 @@
 <body>
     <!-- Navbar Start -->
     <div class="container-fluid bg-light position-relative shadow">
-        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
-            <a href="" class="navbar-brand font-weight-bold text-secondary" style="font-size: 50px;">
-                <i class="flaticon-043-teddy-bear"></i>
-                <span class="text-primary">Qurious</span>
-            </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav font-weight-bold mx-auto py-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="class.html" class="nav-item nav-link">Classes</a>
-                    <a href="team.html" class="nav-item nav-link">Team</a>
-                    <a href="gallery.html" class="nav-item nav-link">Gallery</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
-              
-                        </div>
-                    </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
-                </div>
-                <a href="" class="btn btn-primary px-4">Join Class</a>
-            </div>
-        </nav>
-    </div>
-    <!-- Navbar End -->
-
-
-    <!-- Header Start -->
-    <div class="container-fluid bg-primary mb-5">
-        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-            <h3 class="display-3 font-weight-bold text-white">Our Blog</h3>
-            <div class="d-inline-flex text-white">
-                <p class="m-0"><a class="text-white" href="">Home</a></p>
-                <p class="m-0 px-2">/</p>
-                <p class="m-0">Our Blog</p>
-            </div>
-        </div>
-    </div>
-    <!-- Header End -->
-
+      <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-0 px-lg-5">
+          <a href="" class="navbar-brand font-weight-bold text-secondary" style="font-size: 50px;">
+              <i class="flaticon-043-teddy-bear"></i>
+              <span class="text-primary">
+                  <img src="img/logo.png" alt="Qurious" height="150px" width="150px">
+              </span>
+          </a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+              <div class="navbar-nav font-weight-bold mx-auto py-0">
+                  <a href="index.html" class="nav-item nav-link ">Home</a>
+                  <a href="about.html" class="nav-item nav-link">About</a>
+                  <a href="class.html" class="nav-item nav-link">Classes</a>
+                  <a href="team.html" class="nav-item nav-link">Team</a>
+                  <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                  
+                          <a href="blog.html" class="nav-item nav-link">Blog </a>
+                          <a href="Contact.html" class="nav-item nav-link">Contact</a>
+                  </div>
+                  
+              </div>
+              <a href="" class="btn btn-primary px-4">Join Class</a>
+          </div>
+      </nav>
+  </div>
 
     <!-- Blog Start -->
     
           <div class="container">
-            <a href="Industry.html">
+     
+            <a href="blog/rai.html">
+              <div class="container">
+                  <div class="card">
+                    <div class="icon">
+                      <img src="img/robotics.jpg" alt="robo" style="height: 190px;width: 200px;transform: translateY(15px);">
+                    </div>
+                    <div class="content" style="border-radius: 50%;">
+                      <h3>RAI</h3>
+                      <p>7 articles</p>
+                      <p>Last Update: 6 months ago</p>
+                    </div>
+                  </div></a>
+                  <a href="blog/uiux.html">
+                  <div class="card">
+                    <div class="icon">
+                      <img src="img/uiux.jpg" alt="How Do I" style="height: 200px;width: 250px;">
+                    </div>
+                    <div class="content">
+                      <h3>UI/UX</h3>
+                      <p>1 article</p>
+                      <p>Last Update: 8 months ago</p>
+                    </div>
+                  </div></a>
+                  <a href="blog/infulenecer.html">
+                    <div class="card">
+                      <div class="icon">
+                        <img src="img/influencer.jpg" alt="Sports" style="height: 200px;width: 200px;border-radius: 50% ;">
+                      </div>
+                      <div class="content">
+                        <h3>Influencer</h3>
+                        <p>4 articles</p>
+                        <p>Last Update: 1 month ago</p>
+                      </div>
+                    </div></a>
+            <a href="blog/civilservice.html">
             <div class="card">
               <div class="icon">
-                <img src="industry.jpg" alt="Industry" style="height: 200px;width: 200px;transform: translateY(15px);">
-              </div>
-              <div class="content">
-                <h3>Industry</h3>
-                <p>1 articles</p>
-                <p>Last Update: 6 months ago</p>
-              </div>
-            </div></a>  
-            <a href="HOWDOI.HTML">
-            <div class="card">
-              <div class="icon">
-              
-                <img src="howdoi.png" alt="How Do I" style="height: 200px;width: 200px;">
-              </div>
-              <div class="content">
-                <h3>How Do I</h3>
-                <p>1 article</p>
-                <p>Last Update: 8 months ago</p>
-              </div></a>
-            </div>
-            <a href="civilservice.html">
-            <div class="card">
-              <div class="icon">
-                <img src="civilservice.jpg" alt="civil services" style="height: 200px;width: 200px;">
+                <img src="img/civilservice.jpg" alt="civil services" style="height: 200px;width: 200px;">
               </div>
               <div class="content">
                 <h3>civil services</h3>
@@ -196,10 +191,10 @@
                 <p>Last Update: 6 months ago</p>
               </div></a>
             </div>
-            <a href="health.html">
+            <a href="blog/health.html">
             <div class="card">
               <div class="icon">
-                <img src="health.jpg" style="height: 150px;width: 200px;" alt="Health & Wellness">
+                <img src="img/health.jpg" style="height: 150px;width: 200px;" alt="Health & Wellness">
               </div>
               <div class="content">
                 <h3>Health & Wellness</h3>
@@ -207,10 +202,10 @@
                 <p>Last Update: 2 months ago</p>
               </div>
             </div></a>
-            <a href="aiml.html">
+            <a href="blog/aiml.html">
             <div class="card">
               <div class="icon">
-                <img src="aiml.jpg" alt="Institute" style="height: 150px;width: 200px;" >
+                <img src="img/aiml.jpg" alt="Institute" style="height: 150px;width: 200px;" >
               </div>
               <div class="content">
                 <h3>AIML</h3>
@@ -218,10 +213,10 @@
                 <p>Last Update: 8 months ago</p>
               </div>
             </div></a>
-            <a href="corescience.html">
+            <a href="blog/corescience.html">
             <div class="card">
               <div class="icon">
-                <img src="science.jpg" alt="Core Science" style="height: 150px;width: 150px;border-radius: 50% ;">
+                <img src="img/corescience.jpg" alt="Core Science" style="height: 150px;width: 150px;border-radius: 50% ;">
               </div>
               <div class="content">
                 <h3>Core Science</h3>
@@ -229,10 +224,10 @@
                 <p>Last Update: 6 months ago</p>
               </div>
             </div></a>
-        <a href="sports.html">
+        <a href="blog/sports.html">
             <div class="card">
               <div class="icon">
-                <img src="sports.jpg" alt="Sports" style="height: 150px;width: 200px;">
+                <img src="img/sports.jpg" alt="Sports" style="height: 150px;width: 200px;">
               </div>
               <div class="content">
                 <h3>Sports</h3>
@@ -240,10 +235,10 @@
                 <p>Last Update: 1 month ago</p>
               </div>
             </div></a>
-            <a href="artcareer.html">
+            <a href="blog/artcareer.html">
             <div class="card">
               <div class="icon">
-                <img src="arts.jpg" alt="Arts" style="height: 150px;width: 200px;">
+                <img src="img/arts.jpg" alt="Arts" style="height: 150px;width: 200px;">
               </div>
               <div class="content">
                 <h3>Arts</h3>
@@ -251,33 +246,11 @@
                 <p>Last Update: 3 months ago</p>
               </div>
             </div></a>
-            <a href="rai.html">
-            <div class="container">
+           
+                <a href="blog/army.html">
                 <div class="card">
                   <div class="icon">
-                    <img src="robotics.jpg" alt="robo" style="height: 200px;width: 200px;transform: translateY(15px);">
-                  </div>
-                  <div class="content" style="border-radius: 50%;">
-                    <h3>RAI</h3>
-                    <p>7 articles</p>
-                    <p>Last Update: 6 months ago</p>
-                  </div>
-                </div></a>
-                <a href="uiux.html">
-                <div class="card">
-                  <div class="icon">
-                    <img src="uiux.jpg" alt="How Do I" style="height: 200px;width: 270px;">
-                  </div>
-                  <div class="content">
-                    <h3>UI/UX</h3>
-                    <p>1 article</p>
-                    <p>Last Update: 8 months ago</p>
-                  </div>
-                </div></a>
-                <a href="army.html">
-                <div class="card">
-                  <div class="icon">
-                    <img src="army.jpg" alt="Army " style="height: 200px;width: 200px;border-radius: 50%;">
+                    <img src="img/army.jpg" alt="Army " style="height: 200px;width: 200px;border-radius: 50%;">
                   </div>
                   <div class="content">
                     <h3>Army</h3>
@@ -285,10 +258,10 @@
                     <p>Last Update: 6 months ago</p>
                   </div>
                 </div></a>
-                <a href="bueisness.html">
+                <a href="blog/bueisness.html">
                 <div class="card">
                   <div class="icon">
-                    <img src="BUEISNESS.jpg" style="height: 150px;width: 200px;" alt="Health & Wellness">
+                    <img src="img/BUEISNESS.jpg" style="height: 150px;width: 200px;" alt="Health & Wellness">
                   </div>
                   <div class="content">
                     <h3>Business</h3>
@@ -296,11 +269,11 @@
                     <p>Last Update: 2 months ago</p>
                   </div>
                 </div></a>
-        <a href="law.html">
+        <a href="blog/law.html">
         
                 <div class="card">
                   <div class="icon">
-                    <img src="law.jpg" alt="law" style="height: 150px;width: 200px;" >
+                    <img src="img/law.jpg" alt="law" style="height: 150px;width: 200px;" >
                   </div>
                   <div class="content">
                     <h3>law</h3>
@@ -308,10 +281,10 @@
                     <p>Last Update: 8 months ago</p>
                   </div>
                 </div></a>
-                <a href="teaching.html">
+                <a href="blog/teaching.html">
                 <div class="card">
                   <div class="icon">
-                    <img src="teaching.jpg" alt="Core Science" style="height: 150px;width: 150px;border-radius: 50% ;">
+                    <img src="img/teaching.jpg" alt="Core Science" style="height: 150px;width: 150px;border-radius: 50% ;">
                   </div>
                   <div class="content">
                     <h3>Teaching</h3>
@@ -319,21 +292,11 @@
                     <p>Last Update: 6 months ago</p>
                   </div>
                 </div></a>
-                <a href="infulenecer.html">
+               
+                <a href="blog/marketingfinance.html">
                 <div class="card">
                   <div class="icon">
-                    <img src="influencer.jpg" alt="Sports" style="height: 200px;width: 200px;border-radius: 50% ;">
-                  </div>
-                  <div class="content">
-                    <h3>Influencer</h3>
-                    <p>4 articles</p>
-                    <p>Last Update: 1 month ago</p>
-                  </div>
-                </div></a>
-                <a href="marketingfinance.html">
-                <div class="card">
-                  <div class="icon">
-                    <img src="marketingandfinace.jpg" alt="Arts" style="height: 150px;width: 200px;border-radius: 50% ;">
+                    <img src="img/marketingandfinace.jpg" alt="Arts" style="height: 150px;width: 200px;border-radius: 50% ;">
                   </div>
                   <div class="content">
                     <h3>Marketing and Finance</h3>
