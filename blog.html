@@ -3,13 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="Free HTML Templates" name="keywords">
-  <meta content="Free HTML Templates" name="description">
-
-  <!-- Favicon -->
-  <link href="img/favicon.ico" rel="icon">
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- Google Web Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -20,13 +14,10 @@
 
   <!-- Flaticon Font -->
   <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
 
-  <!-- Libraries Stylesheet -->
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-  <!-- Customized Bootstrap Stylesheet -->
-  <link href="css/style.css" rel="stylesheet">
   <style>
     .container {
       display: flex;
@@ -35,6 +26,9 @@
       align-items: center;
       margin: 25px;
       transform: translate(86px);
+      gap: 20px;
+      column-count: 3;
+      
     }
 
     .card {
@@ -44,7 +38,7 @@
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       border-radius: 10px;
       background-color: white;
-      position: relative;
+      /* position: relative; */
       transform: translate(80px);
 
     }
@@ -117,7 +111,23 @@
       }
     }
 
+    @media (max-width: 992px) {
+      .container {
+        justify-content: flex-start;
+        /* Align cards to the left for smaller screens */
+        padding-left: 15px;
+        /* Add some padding to ensure cards start from the left */
+        padding-right: 15px;
+        /* Add some padding to ensure cards end at the right */
+      }
+    }
 
+    @media (max-width: 576px) {
+      .card {
+        width: calc(100% - 20px);
+        /* Adjust card width for smaller screens */
+      }
+    }
   </style>
 </head>
 
@@ -131,35 +141,47 @@
           <img src="img/logo.png" alt="Qurious" height="150px" width="150px">
         </span>
       </a>
-      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
         <div class="navbar-nav font-weight-bold mx-auto py-0">
-          <a href="index.html" class="nav-item nav-link ">Home</a>
-          <a href="about.html" class="nav-item nav-link">About</a>
-          <a href="class.html" class="nav-item nav-link">Classes</a>
+          <a href="index.html" class="nav-item nav-link "><strong> Home </strong>
+          </a>
+          <a href="about.html" class="nav-item nav-link">
+            <strong> About </strong>
+          </a>
+          <a href="class.html" class="nav-item nav-link">
+            <strong> Classes </strong>
+          </a>
           <!-- <a href="team.html" class="nav-item nav-link">Team</a> -->
-          <a href="gallery.html" class="nav-item nav-link">Gallery</a>
-          <a href="blog.html" class="nav-item nav-link active">Blog </a>
-          <a href="contact.html" class="nav-item nav-link">Contact</a>
+          <a href="gallery.html" class="nav-item nav-link">
+
+            <strong> Gallery </strong>
+          </a>
+          <a href="blog.html" class="nav-item nav-link active">
+            <strong> Blog </strong>
+          </a>
+          <a href="contact.html" class="nav-item nav-link">
+            <strong> Contact </strong></a>
         </div>
-        <a href="class.html" class="btn btn-primary px-4">Join Class</a>
+        <a href="class.html" class="btn btn-primary px-4 btn-p">
+          Join Class</a>
       </div>
-     
+
   </div>
   </nav>
- <!-- Navbar End -->
-    <!-- Header Start -->
-    <div class="container-fluid bg-primary mb-5">
-      <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-          <h3 class="display-3 font-weight-bold text-white">Our Blog</h3>
-          <div class="d-inline-flex text-white">
-              <p class="m-0"><a class="text-white" href="">Home</a></p>
-              <p class="m-0 px-2">/</p>
-              <p class="m-0">Our Blog</p>
-          </div>
+  <!-- Navbar End -->
+  <!-- Header Start -->
+  <div class="container-fluid bg-primary mb-5">
+    <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+      <h3 class="display-3 font-weight-bold text-white">Our Blog</h3>
+      <div class="d-inline-flex text-white">
+        <p class="m-0"><a class="text-white" href="">Home</a></p>
+        <p class="m-0 px-2">/</p>
+        <p class="m-0">Our Blog</p>
       </div>
+    </div>
   </div>
   <!-- Header End -->
   <!-- Blog Start -->
@@ -178,8 +200,10 @@
             <p>Last Update: 6 months ago</p>
           </div>
         </div>
+
     </a>
     <a href="blog/uiux.html">
+      <!-- <div class="container"> -->
       <div class="card">
         <div class="icon">
           <img src="img/uiux.jpg" alt="How Do I" style="height: 200px;width: 250px;">
@@ -190,8 +214,11 @@
           <p>Last Update: 8 months ago</p>
         </div>
       </div>
-    </a>
-    <a href="blog/infulenecer.html">
+  </div>
+  </a>
+  <a href="blog/influencer.html">
+    <div class="container">
+
       <div class="card">
         <div class="icon">
           <img src="img/influencer.png" alt="Sports" style="height: 150px;width: 250px;">
@@ -202,20 +229,25 @@
           <p>Last Update: 1 month ago</p>
         </div>
       </div>
-    </a>
-    <a href="blog/civilservice.html">
-      <div class="card">
-        <div class="icon">
-          <img src="img/civilservice.jpg" alt="civil services" style="height: 200px;width: 200px;">
-        </div>
-        <div class="content">
-          <h3>Civil services</h3>
-          <p>1 article</p>
-          <p>Last Update: 6 months ago</p>
-        </div>
+  </a>
+  <a href="blog/civilservice.html">
+    <!-- <div class="container"> -->
+
+    <div class="card">
+      <div class="icon">
+        <img src="img/civilservice.jpg" alt="civil services" style="height: 200px;width: 200px;">
       </div>
-    </a>
-    <a href="blog/health.html">
+      <div class="content">
+        <h3>Civil services</h3>
+        <p>1 article</p>
+        <p>Last Update: 6 months ago</p>
+      </div>
+    </div>
+    </div>
+  </a>
+  <a href="blog/health.html">
+    <div class="container">
+
       <div class="card">
         <div class="icon">
           <img src="img/health.jpg" style="height: 150px;width: 200px;" alt="Health & Wellness">
@@ -226,20 +258,25 @@
           <p>Last Update: 2 months ago</p>
         </div>
       </div>
-    </a>
-    <a href="blog/aiml.html">
-      <div class="card">
-        <div class="icon">
-          <img src="img/aiml.jpg" alt="Institute" style="height: 150px;width: 200px;">
-        </div>
-        <div class="content">
-          <h3>AIML</h3>
-          <p>1 article</p>
-          <p>Last Update: 8 months ago</p>
-        </div>
+  </a>
+  <a href="blog/aiml.html">
+    <!-- <div class="container"> -->
+
+    <div class="card">
+      <div class="icon">
+        <img src="img/aiml.jpg" alt="Institute" style="height: 150px;width: 200px;">
       </div>
-    </a>
-    <a href="blog/corescience.html">
+      <div class="content">
+        <h3>AIML</h3>
+        <p>1 article</p>
+        <p>Last Update: 8 months ago</p>
+      </div>
+    </div>
+    </div>
+  </a>
+  <a href="blog/corescience.html">
+    <div class="container">
+
       <div class="card">
         <div class="icon">
           <img src="img/corescience.jpg" alt="Core Science" style="height: 150px;width: 150px;border-radius: 50% ;">
@@ -250,20 +287,25 @@
           <p>Last Update: 6 months ago</p>
         </div>
       </div>
-    </a>
-    <a href="blog/sports.html">
-      <div class="card">
-        <div class="icon">
-          <img src="img/sports.jpg" alt="Sports" style="height: 150px;width: 200px;">
-        </div>
-        <div class="content">
-          <h3>Sports</h3>
-          <p>4 articles</p>
-          <p>Last Update: 1 month ago</p>
-        </div>
+  </a>
+  <a href="blog/sports.html">
+    <!-- <div class="container"> -->
+
+    <div class="card">
+      <div class="icon">
+        <img src="img/sports.jpg" alt="Sports" style="height: 150px;width: 200px;">
       </div>
-    </a>
-    <a href="blog/artcareer.html">
+      <div class="content">
+        <h3>Sports</h3>
+        <p>4 articles</p>
+        <p>Last Update: 1 month ago</p>
+      </div>
+    </div>
+    </div>
+  </a>
+  <a href="blog/artcareer.html">
+    <div class="container">
+
       <div class="card">
         <div class="icon">
           <img src="img/arts.jpg" alt="Arts" style="height: 150px;width: 200px;">
@@ -274,21 +316,26 @@
           <p>Last Update: 3 months ago</p>
         </div>
       </div>
-    </a>
+  </a>
 
-    <a href="blog/army.html">
-      <div class="card">
-        <div class="icon">
-          <img src="img/army.jpg" alt="Army " style="height: 200px;width: 200px;border-radius: 50%;">
-        </div>
-        <div class="content">
-          <h3>Army</h3>
-          <p>1 article</p>
-          <p>Last Update: 6 months ago</p>
-        </div>
+  <a href="blog/army.html">
+    <!-- <div class="container"> -->
+
+    <div class="card">
+      <div class="icon">
+        <img src="img/army.jpg" alt="Army " style="height: 200px;width: 200px;border-radius: 50%;">
       </div>
-    </a>
-    <a href="blog/bueisness.html">
+      <div class="content">
+        <h3>Army</h3>
+        <p>1 article</p>
+        <p>Last Update: 6 months ago</p>
+      </div>
+    </div>
+    </div>
+  </a>
+  <a href="blog/bueisness.html">
+    <div class="container">
+
       <div class="card">
         <div class="icon">
           <img src="img/BUEISNESS.jpg" style="height: 150px;width: 200px;" alt="Health & Wellness">
@@ -299,20 +346,25 @@
           <p>Last Update: 2 months ago</p>
         </div>
       </div>
-    </a>
-    <a href="blog/law.html">
-      <div class="card">
-        <div class="icon">
-          <img src="img/law.jpg" alt="law" style="height: 150px;width: 200px;">
-        </div>
-        <div class="content">
-          <h3>Law</h3>
-          <p>1 article</p>
-          <p>Last Update: 8 months ago</p>
-        </div>
+  </a>
+  <a href="blog/law.html">
+    <!-- <div class="container"> -->
+
+    <div class="card">
+      <div class="icon">
+        <img src="img/law.jpg" alt="law" style="height: 150px;width: 200px;">
       </div>
-    </a>
-    <a href="blog/teaching.html">
+      <div class="content">
+        <h3>Law</h3>
+        <p>1 article</p>
+        <p>Last Update: 8 months ago</p>
+      </div>
+    </div>
+    </div>
+  </a>
+  <a href="blog/teaching.html">
+    <div class="container">
+
       <div class="card">
         <div class="icon">
           <img src="img/teaching.jpg" alt="Core Science" style="height: 150px;width: 150px;border-radius: 50% ;">
@@ -323,20 +375,23 @@
           <p>Last Update: 6 months ago</p>
         </div>
       </div>
-    </a>
+  </a>
 
-    <a href="blog/marketingfinance.html">
-      <div class="card">
-        <div class="icon">
-          <img src="img/marketingandfinace.jpg" alt="Arts" style="height: 150px;width: 200px;border-radius: 50% ;">
-        </div>
-        <div class="content">
-          <h3>Marketing and Finance</h3>
-          <p>4 articles</p>
-          <p>Last Update: 3 months ago</p>
-        </div>
+  <a href="blog/marketingfinance.html">
+    <!-- <div class="container"> -->
+
+    <div class="card">
+      <div class="icon">
+        <img src="img/marketingandfinace.jpg" alt="Arts" style="height: 150px;width: 200px;border-radius: 50% ;">
       </div>
-    </a>
+      <div class="content">
+        <h3>Marketing and Finance</h3>
+        <p>4 articles</p>
+        <p>Last Update: 3 months ago</p>
+      </div>
+    </div>
+    </div>
+  </a>
   </div>
   <div class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5">
     <div class="row pt-5">
@@ -356,7 +411,8 @@
           <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;"
             href="#"><i class="fab fa-facebook-f"></i></a>
           <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;"
-            href="https://www.linkedin.com/company/getqurious/about/?viewAsMember=true"><i class="fab fa-linkedin-in"></i></a>
+            href="https://www.linkedin.com/company/getqurious/about/?viewAsMember=true"><i
+              class="fab fa-linkedin-in"></i></a>
           <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;"
             href="https://www.instagram.com/quriousinnovate"><i class="fab fa-instagram"></i></a>
         </div>
@@ -401,36 +457,24 @@
       <div class="col-lg-3 col-md-6 mb-5">
         <h3 class="text-primary mb-4">Newsletter</h3>
         <form action="">
-          <div class="form-group">
-            <input type="text" class="form-control border-0 py-4" placeholder="Your Name" required="required" />
-          </div>
-          <div class="form-group">
-            <input type="email" class="form-control border-0 py-4" placeholder="Your Email" required="required" />
-          </div>
-          <div>
-            <button class="btn btn-primary btn-block border-0 py-3" type="submit">Submit Now</button>
-          </div>
+            <div class="form-group">
+                <input type="text" class="form-control border-0 py-4 m-2" placeholder="Your Name"
+                    required="required" />
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control border-0 py-4 m-2" placeholder="Your Email"
+                    required="required" />
+            </div>
+            <div>
+                <button class="btn btn-primary btn-block border-0 py-3 m-2" type="submit">Submit Now</button>
+            </div>
         </form>
-      </div>
+    </div>
     </div>
 
     <a href="#" class="btn btn-primary p-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
 </body>
 
 </html>
